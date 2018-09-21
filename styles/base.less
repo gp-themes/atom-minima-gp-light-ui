@@ -1,0 +1,67 @@
+body {
+  font-size: @font-size;
+  color: @text-color;
+  background-color: @base-background-color;
+}
+
+atom-workspace {
+  background-color: @base-background-color;
+}
+
+atom-pane {
+  border-right: 1px solid @base-border-color;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+
+// Scrollbars ------------------------------------
+
+.scrollbars-visible-always {
+	::-webkit-scrollbar {
+		width: 3px;
+		height: 3px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: @scrollbar-background-color;
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: 5px;
+		border: 3px solid @scrollbar-background-color;
+		background: @scrollbar-color;
+		background-clip: content-box;
+	}
+
+	::-webkit-scrollbar-corner {
+		background: @scrollbar-background-color;
+	}
+
+	::-webkit-scrollbar-thumb:vertical:active {
+		border-radius: 0;
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+
+	::-webkit-scrollbar-thumb:horizontal:active {
+		border-radius: 0;
+		border-top-width: 0;
+		border-bottom-width: 0;
+	}
+
+	atom-text-editor {
+		::-webkit-scrollbar-track {
+			background: @scrollbar-background-color-editor;
+		}
+		::-webkit-scrollbar-corner {
+			background: @scrollbar-background-color-editor;
+		}
+		::-webkit-scrollbar-thumb {
+			border-color: @scrollbar-background-color-editor;
+			background: @scrollbar-color-editor;
+		}
+	}
+}

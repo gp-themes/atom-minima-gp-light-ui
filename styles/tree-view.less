@@ -1,0 +1,33 @@
+.tree-view {
+  color: @text-color;
+  background-color: @tree-view-background-color;
+
+  .list-item.selected {
+    color: @text-color-selected;
+  }
+
+  // Style project name in tree view
+  .project-root::before {
+    left: 0;
+    right: 0;
+    height: 25px !important;
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+
+  .project-root-header {
+    &::before {
+      top: 0 !important;
+      color: #fff;
+    }
+
+    span.name {
+      color: @text-color-selected;
+      padding: 5px 15px;
+      text-transform: uppercase;
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+}

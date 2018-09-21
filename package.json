@@ -1,0 +1,17 @@
+{
+  "name": "minima-gp-light-ui",
+  "theme": "ui",
+  "version": "0.0.0",
+  "description": "A light UI theme for Atom, based on minima",
+  "keywords": [
+    "ui",
+    "theme",
+    "light"
+  ],
+  "author": "Alex Fedoseev <alex.fedoseev@gmail.com>, Geordie Powers <gp@gpow.ca>",
+  "repository": "https://github.com/geordiep/atom-minima-gp-light-ui",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
