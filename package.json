@@ -1,7 +1,7 @@
 {
   "name": "minima-gp-light-ui",
   "theme": "ui",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A light UI theme for Atom, based on minima",
   "keywords": [
     "ui",
